@@ -8,8 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.sql.Date;
-import java.sql.Time;
+import java.util.Date;
 
 @Getter @Setter @NoArgsConstructor
 @Entity
@@ -19,10 +18,8 @@ public class Assignment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer assignmentID;
     private String address;
-    private Time assignmentStartTime;
-    private Time assignmentEndTime;
-    private Date assignmentStartDate;
-    private Date assignmentEndDate;
+    private Date assignmentStartDateTime;
+    private Date assignmentEndDateTime;
     private String description;
     private String color;
 
