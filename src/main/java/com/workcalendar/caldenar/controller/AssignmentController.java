@@ -17,11 +17,14 @@ public class AssignmentController {
 
     @PostMapping(value="/assignment", consumes = "application/json")
     public ResponseEntity<Assignment> postAssignment(@RequestBody Assignment assignment) {
+        System.out.println(assignment);
         assignmentRepository.save(assignment);
         System.out.println(assignment);
 
         return new ResponseEntity<>(assignment, HttpStatus.CREATED);
     }
+
+    
 
     @DeleteMapping("/assignment/{id}")
     public ResponseEntity<Object> deleteAssignment(@PathVariable int id) {

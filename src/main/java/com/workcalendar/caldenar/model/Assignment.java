@@ -16,6 +16,7 @@ public class Assignment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String title;
     private Integer assignmentID;
     private String address;
     private Date assignmentStartDateTime;
