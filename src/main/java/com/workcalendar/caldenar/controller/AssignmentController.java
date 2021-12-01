@@ -10,13 +10,12 @@ import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin("*")
 @RestController
-@RequestMapping("/assignment")
 public class AssignmentController {
 
     @Autowired
     AssignmentRepository assignmentRepository;
 
-    @PostMapping
+    @PostMapping("/assignment")
     public ResponseEntity<Assignment> postAssignment(@RequestBody Assignment assignment) {
         System.out.println(assignment);
         assignmentRepository.save(assignment);
@@ -25,7 +24,7 @@ public class AssignmentController {
         return new ResponseEntity<>(assignment, HttpStatus.CREATED);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/assigment/{id}")
     public ResponseEntity<Object> deleteAssignment(@PathVariable int id) {
 
         try {
