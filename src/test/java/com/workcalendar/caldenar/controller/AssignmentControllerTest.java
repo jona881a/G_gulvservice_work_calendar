@@ -30,6 +30,13 @@ class AssignmentControllerTest {
     }
 
     @Test
+    void findAllAssignments() {
+        assignmentRepository.save(testPostAssignment);
+        assignmentRepository.save(testDeleteAssignment);
+        assertEquals(2,assignmentRepository.findAll().size());
+    }
+
+    @Test
     void postAssignment() {
         Assignment savedAssignment = assignmentRepository.save(testPostAssignment);
         assertEquals(savedAssignment.getAssignmentID(),testPostAssignment.getAssignmentID());

@@ -8,12 +8,19 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @CrossOrigin("*")
 @RestController
 public class AssignmentController {
 
     @Autowired
     AssignmentRepository assignmentRepository;
+
+    @GetMapping("/assignment")
+    public List<Assignment> getAllAssignments() {
+        return assignmentRepository.findAll();
+    }
 
     @PostMapping("/assignment")
     public ResponseEntity<Assignment> postAssignment(@RequestBody Assignment assignment) {
