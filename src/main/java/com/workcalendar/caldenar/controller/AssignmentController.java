@@ -25,8 +25,6 @@ public class AssignmentController {
         return new ResponseEntity<>(assignment, HttpStatus.CREATED);
     }
 
-    
-
     @DeleteMapping
     public ResponseEntity<Object> deleteAssignment(@PathVariable int id) {
 
