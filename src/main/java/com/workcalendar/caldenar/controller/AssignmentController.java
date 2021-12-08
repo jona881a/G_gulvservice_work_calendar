@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin("*")
+@CrossOrigin
 @RestController
 public class AssignmentController {
 
@@ -31,7 +31,7 @@ public class AssignmentController {
         return new ResponseEntity<>(assignment, HttpStatus.CREATED);
     }
 
-    @DeleteMapping("/assigment/{id}")
+    @DeleteMapping("/assignment/{id}")
     public ResponseEntity<Object> deleteAssignment(@PathVariable int id) {
 
         try {
