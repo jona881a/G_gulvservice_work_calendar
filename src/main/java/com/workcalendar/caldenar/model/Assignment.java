@@ -25,4 +25,59 @@ public class Assignment {
     private String description;
     private String color;
 
+    public Integer getAssignmentID() {
+        return assignmentID;
+    }
+
+    public void setAssignmentID(Integer assignmentID) {
+        this.assignmentID = assignmentID;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public Date getAssignmentStartDateTime() {
+        return assignmentStartDateTime;
+    }
+
+    public void setAssignmentStartDateTime(Date assignmentStartDateTime) {
+        this.assignmentStartDateTime = assignmentStartDateTime;
+    }
+
+    public Date getAssignmentEndDateTime() {
+        return assignmentEndDateTime;
+    }
+
+    public void setAssignmentEndDateTime(Date assignmentEndDateTime) {
+        this.assignmentEndDateTime = assignmentEndDateTime;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 }

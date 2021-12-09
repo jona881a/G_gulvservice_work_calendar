@@ -35,7 +35,7 @@ public class HttpRequestTest {
         Date startDate = new Date(2021,10,10);
         Date endDate = new Date(2021,11,10);
 
-        Assignment newAssignment = new Assignment(1,"gulvslibning","drejøgade",startDate,endDate ,"description here","green");
+        Assignment newAssignment = new Assignment(1, "Event", "Nådsensgade 23", startDate, endDate, "Whatever", "Red");
 
         HttpEntity<Assignment> request = new HttpEntity<>(newAssignment);
 
