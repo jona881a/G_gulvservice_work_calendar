@@ -31,3 +31,8 @@ jobs:
       #Run Tests
       - name: Run Tests
         run: mvn -B test
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1
+        with:
+           name: surefire-reports
+           path: mymeeave/target/surefire-reports/**
