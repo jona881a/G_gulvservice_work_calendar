@@ -5,6 +5,7 @@ import com.workcalendar.caldenar.repository.AssignmentRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Calendar;
@@ -12,7 +13,8 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@SpringBootTest
+//@SpringBootTest
+@DataJpaTest
 class AssignmentControllerTest {
 
     @Autowired
@@ -27,6 +29,11 @@ class AssignmentControllerTest {
         Date endDate = new Date(2021,Calendar.DECEMBER,24);
         testPostAssignment = new Assignment(null,"gulvslibning","drejøgade",startDate,endDate ,"description here","green");
         testDeleteAssignment = new Assignment(null,"gulvslibning","drejøgade",startDate,endDate ,"description here","green");
+    }
+
+    @Test
+    void dummyTest() {
+        assertEquals(1,2);
     }
 
     @Test
