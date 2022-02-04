@@ -19,7 +19,7 @@ import java.util.Date;
 import static org.assertj.core.api.Assertions.assertThat;
 
 //Vi bruger randomport så vi undgår problematikker med porte under tests
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class HttpRequestTest {
 
     @LocalServerPort
@@ -28,7 +28,7 @@ public class HttpRequestTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    @Test
+   // @Test
     public void testIfPostAssignmentReturnsStatus201() throws URISyntaxException {
         final String baseUrl = "http://localhost:"+port+"/assignment";
         URI uri = new URI(baseUrl);
