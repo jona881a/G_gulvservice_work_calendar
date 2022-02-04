@@ -25,6 +25,10 @@ public class Assignment {
     private String description;
     private String color;
 
+    public Assignment(String title) {
+        this.title = title;
+    }
+
     public Integer getAssignmentID() {
         return assignmentID;
     }
