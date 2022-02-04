@@ -1,0 +1,1 @@
+[![Build and deploy JAR app to Azure Web App - gwork](https://github.com/jona881a/G_gulvservice_work_calendar_backend/actions/workflows/master_gwork.yml/badge.svg)](https://github.com/jona881a/G_gulvservice_work_calendar_backend/actions/workflows/master_gwork.yml)
