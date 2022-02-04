@@ -30,11 +30,13 @@ class AssignmentControllerTest {
         testPostAssignment = new Assignment(null,"gulvslibning","drejøgade",startDate,endDate ,"description here","green");
         testDeleteAssignment = new Assignment(null,"gulvslibning","drejøgade",startDate,endDate ,"description here","green");
     }
-
+    /*
     @Test
     void dummyTest() {
         assertEquals(1,2);
     }
+
+     */
 
     @Test
     void findAllAssignments() {
