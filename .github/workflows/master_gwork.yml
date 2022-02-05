@@ -30,6 +30,13 @@ jobs:
           name: java-app
           path: '${{ github.workspace }}/target/*.jar'
 
+      - name: Set retentiondays for build on github
+        uses: actions/upload-artifact@v2
+        with:
+          name: java-app
+          path: '${{ github.workspace }}/target/*.jar'
+          retention-days: 1
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
