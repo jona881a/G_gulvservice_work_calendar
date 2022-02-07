@@ -3,6 +3,7 @@ package com.workcalendar.caldenar;
 import com.workcalendar.caldenar.model.Assignment;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
@@ -20,6 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 //Vi bruger randomport så vi undgår problematikker med porte under tests
 //@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+//@DataJpaTest
 public class HttpRequestTest {
 
     @LocalServerPort
